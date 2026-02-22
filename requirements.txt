@@ -1,0 +1,50 @@
+# ============================================================
+# AstroMind — AI-Driven Near-Earth Object Risk Simulator
+# requirements.txt  |  Python 3.10+ required
+# ============================================================
+
+# ── Quantum Computing ────────────────────────────────────────
+qiskit==1.1.0                    # IBM Quantum SDK — circuits, transpiler
+qiskit-aer==0.14.2               # Statevector/shot-based simulator
+qiskit-machine-learning==0.7.2   # VQC, QNN, QSVC classifiers
+pennylane==0.36.0                # Differentiable quantum programming
+pennylane-qiskit==0.36.0         # PennyLane <-> Qiskit bridge
+
+# ── Machine Learning ─────────────────────────────────────────
+numpy==1.26.4
+scipy==1.13.0                    # ODE solvers, stats
+scikit-learn==1.4.2              # GBM, preprocessing, metrics
+xgboost==2.0.3                   # Gradient boosted trees
+lightgbm==4.3.0                  # Fast gradient boosting
+torch==2.3.0                     # PyTorch (hybrid Q-ML models)
+torchvision==0.18.0
+tqdm==4.66.4                     # Progress bars
+
+# ── Astronomy / Orbital Mechanics ────────────────────────────
+astropy==6.1.0                   # Units, time, sky coordinates
+astroquery==0.4.7                # NASA/JPL data fetching (SBDB, Horizons)
+poliastro==0.17.0                # Keplerian propagation, maneuvers
+jplephem==2.22                   # JPL ephemeris SPK kernels
+skyfield==1.49                   # High-precision astronomical computing
+
+# ── Data ─────────────────────────────────────────────────────
+pandas==2.2.2
+requests==2.32.3                 # NASA API calls
+python-dotenv==1.0.1             # .env config loader
+
+# ── Visualization ─────────────────────────────────────────────
+plotly==5.22.0                   # Interactive 3D orbit plots
+matplotlib==3.9.0                # Static plots, histograms
+dash==2.17.0                     # Web dashboard (optional)
+
+# ── Server ───────────────────────────────────────────────────
+flask==3.0.3                     # Dev server for React UI
+flask-cors==4.0.1
+
+# ── Testing ──────────────────────────────────────────────────
+pytest==8.2.2
+pytest-cov==5.0.0
+
+# ── Notebooks ────────────────────────────────────────────────
+jupyter==1.0.0
+ipykernel==6.29.4
